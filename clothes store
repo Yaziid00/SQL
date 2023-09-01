@@ -1,0 +1,21 @@
+CREATE TABLE store_x(id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, Price NUMERIC, aisle INTEGER);
+
+INSERT INTO store_x VALUES(1, "jeans", 10, 19.99, 5);
+INSERT INTO store_x VALUES(2, "bottles", 16, 8, 12);
+INSERT INTO store_x VALUES(3, "shoes", 19, 39.90, 1);
+INSERT INTO store_x VALUES(4, "belt", 20, 11, 4);
+INSERT INTO store_x VALUES(5, "gloves", 14, 10, 6);
+INSERT INTO store_x VALUES(6, "shorts", 13, 15, 9);
+INSERT INTO store_x VALUES(7, "hoodies", 18, 25.60, 2);
+INSERT INTO store_x VALUES(8, "trousers", 24, 26, 3);
+INSERT INTO store_x VALUES(9, "sunglasses", 17, 30.60, 10);
+INSERT INTO store_x VALUES(10, "socks", 30, 9.99, 11);
+INSERT INTO store_x VALUES(11, "underwear", 28, 19.60, 13);
+INSERT INTO store_x VALUES(12, "hats", 17, 18.90, 15);
+INSERT INTO store_x VALUES(13, "knits", 41, 33, 7); 
+INSERT INTO store_x VALUES(14, "bags", 8, 20, 14);
+INSERT INTO store_x VALUES(15, "jewellery", 6, 34.60, 8);
+
+SELECT id, price, AVG(price) as avg_price
+FROM store_x
+ORDER BY price;
